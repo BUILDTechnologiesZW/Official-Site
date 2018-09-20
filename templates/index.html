@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="../static/css/fontawesome.css">
+  <link rel="stylesheet" href="../static/css/materialize.css">
+  <link rel="stylesheet" href="../static/css/iconfont/material-icons.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+  <title>Build Systems</title>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="row">
+        <div class="nav-wrapper">
+          <div class="col s12 m6">
+            <a href="{{url_for('home')}}" class="brand-logo">
+              <i class="material-icons">view_week</i> Build
+              <span class="hide-on-small-only">Systems</span>
+            </a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons white-text">menu</i>
+            </a>
+          </div>
+          <div class="col s12 m6">
+            <ul class="nav-mobile hide-on-small-and-down center">
+              <li>
+                <a href="{{url_for('systems')}}" target="_blank">Systems Development</a>
+              </li>
+              <li>
+                <a href="{{url_for('mobile')}}" target="_blank">Mobile Development</a>
+              </li>
+              <li>
+                <a href="{{url_for('web')}}" target="_blank">Web Development</a>
+              </li>
+              <li>
+                <a href="https://theophilusokoye.herokuapp.com" target="_blank">Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="{{url_for('systems')}}">Systems Development</a>
+    </li>
+    <li>
+      <a href="{{url_for('mobile')}}">Mobile Development</a>
+    </li>
+    <li>
+      <a href="{{url_for('web')}}">Web Development</a>
+    </li>
+    <li>
+      <a href="https://theophilusokoye.herokuapp.com">Team</a>
+    </li>
+  </ul>
+
+  <!-- Sections : Slides -->
+  <section class="section section-slides slider">
+    <ul class="slides">
+      <li>
+        <img src="../static/img/IMG_1463.png">
+        <div class="caption center-align">
+          <h2 class="black-text">
+            <b>Learn
+              <span id="typed"></span>
+            </b>
+          </h2>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Sections : Icon Boxes -->
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container ">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel blue">
+            <i class="material-icons black-text large">
+              schedule
+            </i>
+            <h4>Rapid Development</h4>
+            <p>Using agile methods to deliver your product on time.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel blue">
+            <i class="material-icons black-text large">
+              build
+            </i>
+            <h4>Optimized Applications</h4>
+            <p>Enhanced and fine tuned applications for your business.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel blue">
+            <i class="material-icons black-text large">
+              security
+            </i>
+            <h4>Secure Data</h4>
+            <br>
+            <p>Cloud applications secured via encryption to protect your data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section : Popular Tool -->
+  <section class="section section-popular grey lighten-4 center">
+    <div class="container">
+      <h4>Our popular development
+        <span class="blue-text text-lighten-2">platforms and tools </span>
+      </h4>
+      <div class="row blue-text text-lighten-2">
+        <div class="col s12 m2">
+          <img src="../static/img/Python_96px.png">
+          <h6>Python</h6>
+        </div>
+        <div class="col s12 m2">
+          <img src="../static/img/Java_96px.png">
+          <h6>Java</h6>
+        </div>
+        <div class="col s12 m2">
+          <img src="../static/img/Source Code_96px.png">
+          <h6>Web</h6>
+        </div>
+        <div class="col s12 m2">
+          <img src="../static/img/ASP_96px.png">
+          <h6>ASP.NET</h6>
+        </div>
+        <div class="col s12 m2">
+          <img src="../static/img/Android OS_96px.png">
+          <h6>Android</h6>
+        </div>
+        <div class="col s12 m2">
+          <img src="../static/img/Database_96px.png">
+          <h6>MongoDB</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section : Pricing -->
+  <section class="section section-pricing grey lighten-4 center">
+    <div class="container">
+      <h4>Billing</h4>
+      <div class="row">
+        <div class="col s12 m4 blue-text text-lighten-1">
+          <div class="card-panel z-depth-2">
+            <a href="" class="btn-floating half-fab">
+              <i class="material-icons blue">mode_edit</i>
+            </a>
+            <h3>Academic</h3>
+            <h5>$ 60.00 </h5>
+            <p>billed as per project</p>
+            <p>
+              <b> * </b>Cost factors have a large range, mostly affected by scope</p>
+          </div>
+        </div>
+        <div class="col s12 m4 teal-text text-lighten-1">
+          <div class="card-panel z-depth-4">
+            <a href="" class="btn-floating half-fab">
+              <i class="material-icons teal">mode_edit</i>
+            </a>
+            <h3>Standard</h3>
+            <h5>$ 8.00 / hr</h5>
+            <p>billed as per project</p>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div class="col s12 m4 purple-text text-lighten-1 ">
+          <div class="card-panel z-depth-2">
+            <a href="" class="btn-floating half-fab">
+              <i class="material-icons purple">mode_edit</i>
+            </a>
+            <h3>Business</h3>
+            <h5>$ 10.00 / hr</h5>
+            <p>billed as per project</p>
+            <p>
+              <b> * </b>Cost factors have a large range, mostly affected by scope</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="section section-footer center black white-text">
+    <p class="flow-text">Build Systems &copy; 2018</p>
+  </footer>
+
+  <!--Scripts-->
+  <script src="../static/js/typed.js"></script>
+  <script src="../static/js/Chart.js"></script>
+  <script src="../static/js/jquery-2.1.1.js"></script>
+  <script src="../static/js/materialize.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
+  <script>
+    //Init Slider
+    $('.slider').slider({
+      indicators: false,
+      height: 500,
+      transition: 500,
+      interval: 6000
+    });
+
+    //Dynamic Text Typing
+    var hello = new Typed('#typed', {
+      strings: ['Kotlin', 'Java', 'Android', 'ASP.net', 'VB.net', 'C#', 'Javascript', 'Python', 'Xamarin'],
+      typeSpeed: 200,
+      backspaceSpeed: 500,
+      loop: true
+    });
+  </script>
+</body>
+
+</html>

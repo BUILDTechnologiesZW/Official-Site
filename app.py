@@ -7,11 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/home')
 def home():
-    return render_template('landing.html')
-
-@app.route('/login')
-def login():
-    return render_template('login.html')
+    return render_template('index.html')
 
 @app.route('/systems')
 def systems():
@@ -24,6 +20,11 @@ def mobile():
 @app.route('/web')
 def web():
     return render_template('web.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

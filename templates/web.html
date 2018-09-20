@@ -12,17 +12,31 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/iconfont/material-icons.css">
     <link rel="stylesheet" href="../static/css/fontawesome.css">
+
+    <!--Stylesheets-->
+    <style>
+        html {
+            background: url(../static/img/background9.png) no-repeat;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid white;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="transparent">
+    <nav class="black">
         <div class="nav-wrapper">
-            <a href="https://btzw.herokuapp.com" class="brand-logo left">
-                <i class="material-icons">view_week</i> Build
+            <a href="{{url_for('home')}}" class="brand-logo left">
+                <i class="material-icons">view_week</i> Build Systems
             </a>
-            <button class="btn-floating btn-large right indigo">
-                <i class="material-icons">search</i>
-            </button>
+            <ul class="nav-mobile right">
+                <li>
+                    <a class="btn" href="{{url_for('about')}}">About</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
